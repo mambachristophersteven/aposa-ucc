@@ -1,0 +1,814 @@
+@font-face {
+    font-family: lora;
+    src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: lilita;
+    src: url(../fonts/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: semiboldpoppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: boldpoppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../pictures/bg\ home.png);
+    background-position: center;
+    background-size: cover;
+    animation: changing 16s ease-in-out infinite;
+}
+
+@keyframes changing{
+    0%,100%{
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../pictures/bg\ home.png);
+        background-position: center;
+        background-size: cover;
+    }
+    25%{
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../pictures/bg3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    50%{
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../pictures/bg4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    75%{
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../pictures/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    min-height: 5rem;
+    padding: 1.0rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(40, 55, 105, 0.90);
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar .menu-options{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.navbar .menu-options a{
+    color: white;
+    font-family: lora;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+}
+
+.navbar .logo-and-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.navbar .logo-and-home .home a{
+    font-family: lora;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+    color: rgba(212, 0, 7, 1);
+}
+
+.navbar .logo img{
+    width: 100px;
+}
+
+.content{
+    margin-top: 1rem;
+    padding: 1.0rem 5%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.content .name-of-association p{
+    color: white;
+    line-height: 3.8rem;
+    font-size: 3.8rem;
+    font-family: lilita;
+    overflow: hidden;
+}
+
+.welcome{
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.welcome .left-welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 8rem;
+
+}
+
+.welcome .left-welcome p{
+    color: white;
+    font-size: 0.9rem;
+    font-family: lora;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.welcome .left-welcome .location{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.welcome .left-welcome a{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.welcome .left-welcome a p{
+    font-size: 2.0rem;
+}
+
+.welcome .left-welcome a img{
+    width: 70px;
+}
+
+.welcome .social-media-icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.welcome .social-media-icons img{
+    width: 34px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/Desktop\ -\ 8.png);
+    background-position: center;
+    background-size: cover;
+}
+.major{
+    display: flex;
+    flex-direction: column;
+    min-height: 33vh;
+    justify-content: flex-start;
+    padding: 1.2rem 3%;
+}
+
+.major .daily-quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.daily-quote h2{
+    font-family: lilita;
+    color: #3450B4;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    background: rgba(239, 150, 150, 0.32);
+	width: 800px;
+	min-height: 200px;
+	transform: skew(-20deg);
+    transform: rotate(-2deg);
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.quotation{
+    transform: skew(20deg);
+    transform: rotate(2deg);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.quotation p{
+    font-family: semiboldpoppins;
+    font-size: 28px;
+    color: #3450B4;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.button-and-verse{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.button-and-verse button{
+    width: 200px;
+    padding: 2px;
+    font-weight: 600;
+    color: #EFC2C4;
+    background: rgba(52, 80, 180, 0.79);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.button-and-verse p{
+    color: rgba(111, 24, 27, 0.6);
+    font-size: 35px;
+    font-weight: 800;
+    font-family: boldpoppins;
+}
+
+.major .mission-statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.mission-statement h2{
+    font-family: lilita;
+    color: #3450B4;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.mission-box{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    background: rgba(239, 150, 150, 0.32);
+	width: 800px;
+	min-height: 200px;
+	transform: skew(20deg);
+    transform: rotate(2deg);
+    margin-left: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.mission-box p{
+    transform: skew(-20deg);
+    transform: rotate(-2deg);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    font-family: semiboldpoppins;
+    font-size: 28px;
+    color: #3450B4;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#register-button{
+    width: 200px;
+    padding: 12px;
+    font-weight: 600;
+    color: #EFC2C4;
+    background: rgba(52, 80, 180, 0.79);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/Desktop\ -\ 9.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.motto{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.motto p{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: rgba(212, 0, 7, 1);
+    font-size: 28px;
+    font-family: lilita;
+    text-transform: capitalize;
+}
+
+.motto img{
+    width: 200px;
+}
+
+.heading{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.heading p{
+    color: rgba(52, 80, 180, 1);
+    font-size: 48px;
+    font-family: lilita;
+}
+
+.event-images{
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2rem 3%;
+}
+
+.event-images img{
+    border-radius: 5px;
+    width: 400px;
+    min-height: 500px;
+}
+
+.hymns-and-tenets{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 5%;
+    
+}
+
+.hymns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hymns p{
+    font-size: 28px;
+    font-family: lilita;
+    color: rgba(212, 0, 7, 1);
+    margin-bottom: 5px;
+}
+
+.box{
+    background: rgba(239, 150, 150, 0.32);
+	width: 500px;
+	min-height: 300px;
+	transform: skew(10deg);
+    transform: rotate(1deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box .talk{
+    transform: skew(-10deg);
+    transform: rotate(-1deg);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.talk p{
+    font-size: 28px;
+    font-family: semiboldpoppins;
+    color: #3450B4;
+}
+
+.hymn-button{
+    display: flex;
+    width: 100%;
+    transform: skew(-10deg);
+    transform: rotate(-1deg);
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hymn-button button{
+    width: 200px;
+    padding: 12px;
+    font-weight: 600;
+    color: #EFC2C4;
+    background: rgba(52, 80, 180, 0.79);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/Desktop\ -\ 2.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading #sub-heading{
+    font-size: 28px;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+.executive-image-slider{
+    display: flex;
+    gap: 20px;
+}
+
+.executive-image{
+    position: relative;
+    min-height: 250px;
+    width: 380px;
+}
+
+.executive-image img{
+    width: 380px;
+    border-radius: 10px;
+}
+
+.social-media-executive{
+    position: absolute;
+    left: 0%;
+    top: 75%;
+    width: 100%;
+    padding: 0.1rem 5%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+
+.social-media-executive p{
+    color: #ffffff;
+    font-family: lilita;
+    text-align: right;
+    font-size: 20px;
+}
+
+.social-media-icons img{
+    width: 30px;
+    margin-right: 7px;
+}
+
+#executive-position{
+    color: #3450B4;
+    font-size: 24px;
+    font-family: lilita;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.executive-button{
+    margin-top: 30px;
+    background: rgba(239, 150, 150, 0.32);
+	width: 400px;
+	min-height: 90px;
+	transform: skew(-10deg);
+    transform: rotate(-1deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+}
+
+.executive-button button{
+    transform: skew(10deg);
+    transform: rotate(1deg);
+    width: 300px;
+    padding: 12px;
+    font-weight: 600;
+    color: #EFC2C4;
+    background: rgba(52, 80, 180, 0.79);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.executive-button-section{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0.1rem 5%;
+}
+
+#gallery-button{
+    align-self: flex-start;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/Desktop\ -\ 9.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.announcemnet-box{
+    margin-top: 30px;
+    background: rgba(239, 150, 150, 0.32);
+	width: 1000px;
+	min-height: 120px;
+	transform: skew(-10deg);
+    transform: rotate(-1deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.announcemnet-box p{
+    transform: skew(10deg);
+    transform: rotate(1deg);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: #3450B4;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: lilita;
+}
+
+.location-box{
+    margin-top: 30px;
+    background: rgba(239, 150, 150, 0.32);
+	width: 1000px;
+	min-height: 120px;
+	transform: skew(-10deg);
+    transform: rotate(-1deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.location-box{
+    transform: skew(10deg);
+    transform: rotate(1deg);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: #3450B4;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: lilita;
+    margin-bottom: 20px;
+}
+
+.info-box-and-image{
+    display: flex;
+    padding: 0.2rem 5%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-box{
+    margin-top: 30px;
+    background: rgba(239, 150, 150, 0.32);
+	width: 600px;
+	min-height: 400px;
+	transform: skew(-10deg);
+    transform: rotate(-1deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.info-box p{
+    transform: skew(10deg);
+    transform: rotate(1deg);
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    color: #3450B4;
+    text-transform: capitalize;
+    font-family: lilita;
+    line-height: 35px;
+}
+.pastor-and-wife-image img{
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.join-us-container{
+    padding: 1.0rem 3%;
+    width: 90%;
+    margin-top: 30px;
+    background: rgba(239, 150, 150, 0.32);
+	min-height: 250px;
+	transform: skew(-10deg);
+    transform: rotate(-1deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.join-us-box{
+    transform: skew(10deg);
+    transform: rotate(1deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-us-talk p{
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: #3450B4;
+    text-align: left;
+    text-transform: capitalize;
+    font-family: lilita;
+    line-height: 30px;
+}
+
+.join-us-button button{
+    width: 300px;
+    padding: 18px;
+    font-weight: 600;
+    color: #EFC2C4;
+    background: rgba(52, 80, 180, 0.79);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.footer{
+    background: rgba(40, 55, 105, 0.83);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.0rem 5%;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.top-part{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-part img{
+    width: 30px;
+}
+
+.top-part a{
+    color: white;
+    font-family: lora;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    word-spacing: 0.5rem;
+}
+
+.top-part .media-icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-part .nav-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-part .home a{
+    color: rgba(212, 0, 7, 1);
+}
+
+.down-part{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.down-part .footer-logo img{
+    width: 120px;
+
+}
+
+.down-part .aposa-name p{
+    color: white;
+    font-size: 40px;
+    font-family: lilita;
+}
+
+.down-part .footer-motto p{
+    color: white;
+    font-size: 30px;
+    font-family: lilita;
+}
